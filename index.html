@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt lev3_11: Number Guessing Game</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Number Guessing Game 1-100</h1>
+    </header>
+    <!-- Main -->
+    <main>
+        <form>
+            <!-- User round input -->
+            <fieldset>
+                <h2>In how many rounds you think you can guess the number?</h2>
+                <section id="userRoundInput">
+                    <div>
+                        <label for="rounds">4</label>
+                        <input type="radio" name="rounds" id="round4">
+                    </div>
+                    <div>
+                        <label for="rounds">5</label>
+                        <input type="radio" name="rounds" id="round5">
+                    </div>
+                    <div>
+                        <label for="rounds">6</label>
+                        <input type="radio" name="rounds" id="round6">
+                    </div>
+                    <div>
+                        <label for="rounds">custom</label>
+                        <input type="radio" name="rounds" id="roundCustom">
+                        <input type="number" name="roundCustom" id="customUserRound">
+                    </div>
+                </section>
+                <section id="roundsPlaying">
+                    <p id="roundOf"></p>
+                </section>
+            </fieldset>
+            <!-- User Input guessing number -->
+            <fieldset>
+                <input type="number" name="userGuess" id="userGuess">
+                <button type="submit">guess</button>
+            </fieldset>
+        </form>
+        <!-- result -->
+        <section>
+            <ol id="result">
+            </ol>
+            <p id="endResult"></p>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
